@@ -1,0 +1,9 @@
+streamlit
+transformers
+torch
+huggingface_hub
+keras
+tensorflow
+joblib
+numpy
+pandas
