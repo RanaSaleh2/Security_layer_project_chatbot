@@ -6,7 +6,7 @@ import re
 
 # === Restored API key as requested (user provided) ===
 os.environ["OPEN_ROUTER"] = st.secrets["OPEN_ROUTER"]
-
+secretst
 # --- Try optional spellchecker ---
 try:
     from spellchecker import SpellChecker
