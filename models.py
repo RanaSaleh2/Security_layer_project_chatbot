@@ -27,7 +27,7 @@ model_2 = joblib.load(model_path_2)
 vectorizer_2 = joblib.load(vectorizer_path_2)
 
 # ===== OpenRouter =====n
-os.environ.setdefault("OPEN_ROUTER", "st.secrets["OPENAI_API_KEY"]")  # ضع مفتاحك في متغير البيئة OPEN_ROUTER
+os.environ.setdefault("OPEN_ROUTER", st.secrets["OPENAI_API_KEY"])
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 OPENROUTER_MODEL = "nvidia/nemotron-nano-12b-v2-vl:free"
 
@@ -181,7 +181,7 @@ def classify_with_confidence(prompt):
 # -----------------------------
 def get_openrouter_response(prompt):
     headers = {
-        "Authorization": f"Bearer {st.secrets["OPENAI_API_KEY"]}",
+        "Authorization": f"Bearer {st.secrets['OPENAI_API_KEY']}",
         "Content-Type": "application/json",
     }
 
