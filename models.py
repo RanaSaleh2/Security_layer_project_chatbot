@@ -29,7 +29,7 @@ model_2 = joblib.load(model_path_2)
 vectorizer_2 = joblib.load(vectorizer_path_2)
 
 # ===== OpenRouter =====n
-os.environ.setdefault("OPEN_ROUTER", st.secretst.["OPEN_ROUTER"])
+os.environ.setdefault("OPEN_ROUTER", st.secrets["OPEN_ROUTER"])
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 OPENROUTER_MODEL = "nvidia/nemotron-nano-12b-v2-vl:free"
 
