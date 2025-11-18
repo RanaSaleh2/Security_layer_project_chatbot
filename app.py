@@ -40,7 +40,7 @@ team_members = {
 
 for name, url in team_members.items():
     st.sidebar.markdown(f"- [{name}]({url})")
-
+st.markdown("---")
 
 # --- Session state ---
 ms = st.session_state
