@@ -26,6 +26,22 @@ PRIMARY_COLOR = "#003366"
 # --- Page setup ---
 st.set_page_config(page_title="Prompt Classifier Chatbot", page_icon="🤖", layout="centered")
 
+# =========================
+# Team Section (Sidebar)
+# =========================
+st.sidebar.title("👥 Project Team")
+
+team_members = {
+    "Rana": "https://github.com/RanaSaleh2",
+    "Haitham": "https://github.com/Ha80ii",
+    "Danah": "https://github.com/dralsarrani",
+    "Ghadi": "https://github.com/GhadiBa",
+}
+
+for name, url in team_members.items():
+    st.sidebar.markdown(f"- [{name}]({url})")
+
+
 # --- Session state ---
 ms = st.session_state
 if "messages" not in ms:
